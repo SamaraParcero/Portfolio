@@ -1,0 +1,159 @@
+body{
+    background-color: #0E1419;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    margin: auto;
+    max-width: 1600px;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center !important;
+    justify-content: space-between !important;
+    align-items: center;
+}
+
+
+
+.lista-header{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.espaco{
+    display: flex;
+    margin-top: 10px;
+}
+
+.itemlista a {
+    font-size: 1.125rem;
+    line-height: 1.3;
+    text-decoration: none ;
+    color: white;
+    padding: 10px 20px;
+}
+
+.itemlista  button{
+    background-color: #043233;
+    border: 2px solid #13E6E6;
+    border-radius: 3px;
+    font-size: 1.125rem;
+    line-height: 1.3;
+    padding: 10px 20px ;
+    text-decoration: none ;
+    color: #C4C4C3;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 750px){
+    .header{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+}
+
+
+.apresentacao{
+    background-image: url("imgs/shahadat-rahman-gnyA8vd3Otc-unsplash\ 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.apresentacao-bloco{
+    margin: 0 auto;
+    max-width: 1600px;
+    padding: 40px 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 200px;
+    align-items: center;
+}
+
+.imgsam{
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+.prazer-samara{
+font-size: 25px;
+font-family: 'Fira Code', monospace;
+}
+
+.prazer{
+    color:#969898 ;
+}
+
+.samara{
+    color: #13E6E6;
+}
+
+.detalhe{
+    font-family: 'Fira Code', monospace;
+    color: #E613C4;
+}
+
+.titulo{
+    font-family: 'Fira Code', monospace;
+    font-size: 55px;
+}
+
+.localizacao{
+display: flex;
+gap: 10px;
+}
+
+.salvador{
+    color: #45D8D8;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+@media (max-width: 1300px){
+    .apresentacao-bloco{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 30px 50px;
+        gap: 50px;
+    }
+
+}
+
+@media (max-width: 600px){
+    .apresentacao-bloco{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 5px 5px;
+        gap: 20px;
+    }
+
+    .titulo{
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width: 500px){
+    .apresentacao-bloco{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 5px 0px;
+        gap: 20px;
+    }
+
+    .titulo{
+        font-size: 25px;
+    }
+}
