@@ -2,6 +2,7 @@ body{
     background-color: #0E1419;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    margin: auto;
 }
 
 .header{
@@ -14,14 +15,23 @@ body{
     align-items: center;
 }
 
+span#burguer {
+text-align: center;
+display: none;
+}
 
+.container{
+    justify-content: center !important;
+}
 
-.lista-header{
+ul.lista-header{
+    padding-left: 0px;
+    list-style-type: none;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    
+    justify-content: center !important;
 }
 
 .espaco{
@@ -51,11 +61,41 @@ body{
 
 
 
+@media (max-width: 550px){
+    .header{
+        padding: 5px 5px;
+    }
+
+    span#burguer {
+        text-align: center;
+        display: flex;
+        }
+
+    nav#nav.menu{
+        width: 100%;
+        display: none;
+    }
+
+    ul.lista-header{
+        display: grid;
+        
+    }
+
+    .espaco{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+   
+
+}
+
+
 
 @media (max-width: 750px){
     .header{
-        flex-direction: column;
-        gap: 40px;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
 }
@@ -68,7 +108,7 @@ body{
 }
 
 .apresentacao-bloco{
-    margin: 0 auto;
+    margin: auto;
     max-width: 1600px;
     padding: 40px 100px;
     display: grid;
@@ -153,7 +193,300 @@ gap: 10px;
         gap: 20px;
     }
 
-    .titulo{
-        font-size: 25px;
-    }
+    
 }
+
+
+.tecnologias{
+    max-width: 1600px;
+    margin: auto;
+    padding: 40px 20px;  
+}
+
+.linha{
+    width: 100px;
+    height: 6px;
+    background-color: #297274;
+    color: #297274;
+}
+
+.nome{
+font-size: 45px
+}
+
+.nomes-secao{
+    color: #13E6E6;
+}
+
+.containert{
+    max-width: 1600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly !important;
+    margin: 0 auto;
+    padding: 0px 0px;
+}
+
+
+.experiencia-profissional{
+    max-width: 1600px;
+    margin: auto;
+    padding: 40px 20px;  
+}
+
+.experiencias{
+    background-color: #002031;
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 20px 40px;
+    gap: 200px;
+}
+
+
+.experiencia-descricao{
+color: #A8A8A8;
+background-color: #05223A;
+border: 0.5px solid #9EA0A1;
+border-radius: 5px;
+}
+
+.titulo-trabalho{
+    font-size: 25px;
+    color: #E613C4;
+}
+
+.detalhe-exp{
+    font-weight: lighter;
+    color: #CF87C3;
+}
+
+.atuacao{
+    color: #D7D7D7;
+    padding-left: 5px;
+}
+
+.texto-descricao{
+    padding: 10px 20px ;
+    font-size: 13px;
+}
+
+.formacao{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 40px 20px;  
+    
+}
+
+
+.formacoes{
+    padding: 20px 150px;
+}
+
+
+.formacao-unica{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    
+}
+
+.titulo-formacao{
+    position: relative;
+    font-size: 20px;
+    color: #E613C4;
+    background-color: #002031;
+    padding: 20px 60px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.descricao-formacao{
+    color: #A8A8A8;
+    background-color: #05223A;
+    padding: 10px 20px;
+    border: 1px solid #9EA0A1;
+    border-radius: 5px;
+}
+
+
+.linha-vertical{
+    background-color: #CF87C3;
+    height: 95%;
+    width: 10px;
+    border-radius: 5px;
+    position: absolute;
+    margin: 5px -30px ;
+    right: 0;
+    top: 0; 
+}
+
+.curso{
+    max-width: 1600px;
+    margin: auto;
+    padding: 40px 20px; 
+}
+
+.apenas-linha{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.linhagrande-horizontal{
+    position: absolute;
+    display: flex;
+    background-color: #297274;
+    width: 80%;
+    height: 6px;
+    bottom: 0;
+}
+
+.contate{
+    background-color: #05223A;
+}
+
+.contate-nos{
+    max-width: 1600px;
+    margin: auto;
+    padding: 40px 20px; 
+}
+
+.contate-info{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+}
+
+.contatar{
+    font-family: 'Fira Code', monospace;
+    flex-wrap: wrap;
+    font-size: 55px;
+}
+
+.contateme{
+ color: #13E6E6;
+}
+
+.contatos ul {
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.text{
+ padding-left: 10px;
+ padding-bottom: 20px;
+}
+
+
+.ultimo{
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+
+
+@media (max-width: 500px){
+
+    .nome{
+        font-size: 27px;
+    }
+    
+}
+
+@media (max-width: 750px){
+    
+
+    .experiencias{
+        padding: 0px 0px;
+        flex-wrap: wrap;
+     gap: 50px;
+    } 
+}
+
+
+@media (max-width: 1000px){
+    .experiencias{
+     gap: 50px;
+    } 
+
+    .formacao-unica{
+        background-color: #142A3C;
+        border-radius: 5px;
+        justify-content: center;
+    }
+
+    .titulo-formacao{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1050px){
+    .linha-vertical{
+        height: 0;
+        width: 0;
+        margin: 0px 0px ;
+    }
+    
+    .formacoes{
+        padding: 10px 20px;
+        
+    }
+
+
+    .formacao-unica{
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .contate-nos{
+        position: relative;
+        display: flex;
+    }
+
+    .ultimo{
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        bottom: 0;
+        right: 0;
+    }
+
+    .direito{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 1350px){
+    
+    .formacoes{
+        padding: 20px 75px;
+    }
+
+
+    .formacao-unica{
+        gap: 75px;
+    }
+
+    .contatar{
+        font-size: 40px;
+    }
+    
+}
+

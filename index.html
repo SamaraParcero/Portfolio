@@ -1,80 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="" href="lib/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/slick-1.8.1/slick/slick-theme.css"/>
+
     <title>Portfolio Samara Parcero</title>
 </head>
+
 <body>
 
     <header class="header">
         <img class="logosam" src="logo/TechSam.svg" alt="">
-        
-        <span class="material-symbols-outlined">
+
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
             menu
-            </span>
-        <nav class="menu">
+        </span>
+
+        <nav id="nav" class="menu">
+
             <ul class="lista-header">
                 <div class="espaco">
-                <li class="itemlista"><a href="#experiencia-profissional">Experiência</a></li>
-                <li class="itemlista"><a href="#formacao">Formação</a></li>
-            </div>
+                    <li class="itemlista"><a href="#experiencia-profissional">Experiência</a></li>
+                    <li class="itemlista"><a href="#formacao">Formação</a></li>
+                </div>
                 <li class="itemlista"><button>Contate-me</button></li>
             </ul>
+
         </nav>
+
     </header>
 
     <section class="apresentacao">
         <div class="apresentacao-bloco">
-        <img class="imgsam" src="imgs/WhatsApp Image 2023-12-29 at 19.04 1.png" alt="">
-        <div >
-        <h3 class="prazer-samara"><span class="prazer" >Prazer,</span><span class="samara">  Samara Parcero</span><span class="prazer">!</span></h3>
-        <h1 class="titulo"><span class="detalhe">&lt;</span>Desenvolvedora Java <br> Fullstack<span class="detalhe">></span></h1>
-        <div class="localizacao">
-        <img src="logo/Vector.svg" alt="">
-        <h5 class="salvador">Salvador - BA</h5>
-    </div>
-    </div>
-</div>   
+            <img class="imgsam" src="imgs/WhatsApp Image 2023-12-29 at 19.04 1.png" alt="">
+            <div>
+                <h3 class="prazer-samara"><span class="prazer">Prazer,</span><span class="samara"> Samara
+                        Parcero</span><span class="prazer">!</span></h3>
+                <h1 class="titulo"><span class="detalhe">&lt;</span>Desenvolvedora Java <br> Fullstack<span
+                        class="detalhe">></span></h1>
+                <div class="localizacao">
+                    <img src="logo/Vector.svg" alt="">
+                    <h5 class="salvador">Salvador - BA</h5>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="tecnologias">
-        <span class="linha"></span>
-        <h1><span class="nomes-secao">&lt;</span>Tecnologias<span class="nomes-secao">></span></h1>
-        <div class="container-tecnologia">
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <div class="carousel-container">
-                <div class="carousel-slide"><img src="imgs/java 1.png" alt=""></div>
-                <div class="carousel-slide"><img src="imgs/html.png" alt=""></div>
-                <div class="carousel-slide"><img src="imgs/css.png" alt=""></div>
-                <div class="carousel-slide"><img src="imgs/javascript.png" alt=""></div>
-                <div class="carousel-slide"><img src="imgs/uiux.png" alt=""></div>
-                <div class="carousel-slide"><img src="imgs/bootstrap.png" alt=""></div>
-            </div>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        <div class="linha"></div>
+        <h1 class="nome"><span class="nomes-secao">&lt;</span>Tecnologias<span class="nomes-secao">></span></h1>
+        <div class="containert">
+            <div class="imagemtec"><img src="imgs/java.png" alt=""></div>
+            <div class="imagemtec"><img src="imgs/html.png" alt=""></div>
+            <div class="imagemtec"><img src="imgs/css.png" alt=""></div>
+            <div class="imagemtec"><img src="imgs/javascript.png" alt=""></div>
+            <div class="imagemtec"><img src="imgs/uiux.png" alt=""></div>
+            <div class="imagemtec"><img src="imgs/bootstrap.png" alt=""></div>
         </div>
-
     </section>
 
+   
 
     <section class="experiencia-profissional">
-        <span class="linha"></span>
-        <h1><span class="nomes-secao">&lt;</span>Experiência Profissional<span class="nomes-secao">></span></h1>
+        <div class="linha"></div>
+        <h1 class="nome"><span class="nomes-secao">&lt;</span>Experiência Profissional<span class="nomes-secao">></span></h1>
         <div class="experiencias">
-            <div class="experiencia">
-                <img src="imgs/imnd.jpg" alt="">
-                <h3>Freelance <span class="detalhe-exp">- 2023</span></h3>
-                <h4>Desenvolvedora Front-End</h4>
+            
+                <img class="img-imnd" src="imgs/imnd.jpg" alt="">
+                <div class="experiencia">
+                <h3 class="titulo-trabalho">Freelance <span class="detalhe-exp">- 2023</span></h3>
+                <h4 class="atuacao">Desenvolvedora Front-End</h4>
                 <div class="experiencia-descricao">
-                    <p>Usando <span>HTML</span>, <span>CSS</span>, <span>Javascript</span>, <span>Bootstrap</span> e <span>UI/UX</span>, eu e meu time desenvolvemos o site do Ministério Navegadores de Deus, que hoje já está ativo na Web. O cliente ficou bem satisfeito com o resultado.</p>
+                    <p class="texto-descricao">Usando <span>HTML</span>, <span>CSS</span>, <span>Javascript</span>, <span>Bootstrap</span> e
+                        <span>UI/UX</span>, eu e meu time <br> desenvolvemos o site do Ministério Navegadores de Deus, que
+                        hoje já está ativo na Web. O cliente ficou bem satisfeito com o resultado.
+                    </p>
                 </div>
 
 
@@ -86,23 +104,30 @@
     </section>
 
     <section class="formacao">
-        <span class="linha"></span>
-        <h1><span class="nomes-secao">&lt;</span>Formação<span class="nomes-secao">></span></h1>
+        <div class="linha"></div>
+        <h1 class="nome"><span class="nomes-secao">&lt;</span>Formação<span class="nomes-secao">></span></h1>
         <div class="formacoes">
             <div class="formacao-unica">
-                <div class="titulo-formacao"><h3>Bacharelado em Engenharia de Software</h3></div>
-                <span class="linha-vertical"></span>
+                
+                <div class="titulo-formacao">
+                    <h3>Bacharelado em <br> Engenharia de Software</h3>
+                    <div class="linha-vertical"></div>
+                </div>
+                
                 <div class="descricao-formacao">
-                    <p>Estudo na <span>Universidade Católica do Salvador</span>. <br>
-                       Período Ativo: 02/2023 - Atualmente</p>
+                    <p class="texto-descricao">Estudo na <span>Universidade Católica do Salvador</span>. <br>
+                        Período Ativo: 02/2023 - Atualmente</p>
                 </div>
             </div>
 
             <div class="formacao-unica">
-                <div class="titulo-formacao"> <h3>Ensino Fundamental e Médio</h3></div>
-                <span class="linha-vertical"></span>
+                <div class="titulo-formacao">
+                    <h3>Ensino Fundamental <br> e Médio</h3>
+                    <div class="linha-vertical"></div>
+                </div>
+                
                 <div class="descricao-formacao">
-                    <p>Estudei no <span>Colégio Apoio</span>. <br>
+                    <p class="texto-descricao">Estudei no <span>Colégio Apoio</span>. <br>
                         Período Ativo: 2006 - 2022</p>
                 </div>
             </div>
@@ -111,70 +136,88 @@
     </section>
 
     <section class="curso">
-        <span class="linha"></span>
-        <h1><span class="nomes-secao">&lt;</span>Cursos<span class="nomes-secao">></span></h1>
-        <div class="cursos">
-            <div class="curso-unico">
-                <div class="titulo-curso"><h3>Inglês</h3></div>
-                <span class="linha-vertical"></span>
-                <div class="descricao-curso">
-                    <p>Estudei no <span>ID idiomas</span>. <br>
+        <div class="linha"></div>
+        <h1 class="nome"><span class="nomes-secao">&lt;</span>Cursos<span class="nomes-secao">></span></h1>
+        <div class="formacoes">
+            <div class="formacao-unica">
+                <div class="titulo-formacao">
+                    <h3>Inglês</h3>
+                    <div class="linha-vertical"></div>
+                </div>
+                
+                <div class="descricao-formacao">
+                    <p class="texto-descricao">Estudei no <span>ID idiomas</span>. <br>
                         Período Ativo: 06/2018 - 02/2022
                         Grau de conhecimento: <span>Intermediário-Avançado</span>.</p>
+                        
                 </div>
             </div>
 
-            <div class="curso-unico">
-                <div class="titulo-curso"><h3>Curso HTML5 E CSS3</h3></div>
-                <span class="linha-vertical"></span>
-                <div class="descricao-curso">
-                    <p>Instituição: <span>Curso em Vídeo</span>. <br>
+            <div class="formacao-unica">
+                <div class="titulo-formacao">
+                    <h3>Curso HTML5 E CSS3</h3>
+                    <div class="linha-vertical"></div>
+                </div>
+                
+                <div class="descricao-formacao">
+                    <p class="texto-descricao">Instituição: <span>Curso em Vídeo</span>. <br>
                         Período Ativo: 11/2022 - 02/2023</p>
                 </div>
             </div>
 
-            <div class="curso-unico">
-                <div class="titulo-curso"><h3>UI/UX</h3></div>
-                <span class="linha-vertical"></span>
-                <div class="descricao-curso">
-                    <p>Instituição: <span>Origamid</span>. <br>
+            <div class="formacao-unica">
+                <div class="titulo-formacao">
+                    <h3>UI/UX</h3>
+                    <div class="linha-vertical"></div>
+                </div>
+                
+                <div class="descricao-formacao">
+                    <p class="texto-descricao">Instituição: <span>Origamid</span>. <br>
                         Período Ativo: 12/2023 - Atualmente</p>
                 </div>
             </div>
         </div>
 
     </section>
- 
-    <span class="linhagrande-horizontal"></span>
-    <section  class="contate">
+
+    <section class="contate">
+        <div class="apenas-linha">
+            <div class="linhagrande-horizontal"></div>
+        </div>
+        <div class="contate-nos">
         <div class="contate-info">
-            <h1><span class="detalhe">&lt;</span>Deseja que eu faça seu projeto? <span class="contateme">Contate-me</span><span class="detalhe">></span></h1>
-             <div  class="contatos">
+            <h1 class="contatar"><span class="detalhe">&lt;</span> Deseja que eu <br> faça seu projeto?<span
+                    class="contateme"> Contate-me</span>! <span class="detalhe">></span></h1>
+            <div class="contatos">
                 <ul>
-                    <li><img src="logo/Vector.png" alt=""> samaraparceroti@gmail.com</li>
-                    <li><img src="logo/whatsapp.svg" alt=""> +55 71 996553565</li>
-                    <li><img src="logo/instagram.svg" alt=""> @Techsamdev</li>
+                    <li><img src="logo/Vector.png" alt=""> <span class="text"> samaraparceroti@gmail.com</span> </li>
+                    <li><img src="logo/whatsapp.svg" alt=""><span class="text">+55 71 996553565</span> </li>
+                    <li><img src="logo/instagram.svg" alt=""> <span class="text">@Techsamdev</span> </li>
                 </ul>
 
-             </div>
+            </div>
         </div>
 
         <div class="ultimo">
-            <h6>Samara, todos os direitos reservados</h6>
-
+            <h6 class="direito">Samara, todos os direitos reservados</h6>
+            <div>
             <img src="logo/linkedin.png" alt="">
             <img src="logo/github.png" alt="">
             <img src="logo/instagram.png" alt="">
-
+           </div>
+           <div></div>
         </div>
-        
-        
-
-
-
+    </div>
     </section>
+
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="lib/slick-1.8.1/slick/slick.min.js"></script>
     
 
     <script src="script.js"></script>
+
 </body>
+
 </html>
