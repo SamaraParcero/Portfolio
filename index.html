@@ -38,15 +38,72 @@
 
             <ul class="lista-header">
                 <div class="espaco">
-                    <li class="itemlista"><a href="#experiencia-profissional">Experiências</a></li>
-                    <li class="itemlista"><a href="#formacao">Formações</a></li>
+                    <li class="itemlista"><a href="#experiencias-profissionais">Experiências</a></li>
+                    <li class="itemlista"><a href="#formacoes">Formações</a></li>
                 </div>
-                <li class="itemlista"><button>Contate-me</button></li>
+                <li class="itemlista"><button id="modalcontato">Contate-me</button></li>
             </ul>
 
         </nav>
 
     </header>
+
+    <!---Seção Modal Inscreva-se-->
+<!-- O Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content" style="height: 110%; height: auto;">
+      <span class="close" onclick="fecharModal()">&times;</span>
+  
+      <div class="caixamensagem ">
+        <div class="logosamara">
+            <img src="logo/Techsam1.svg" alt="">
+            <p class="slogan">Uma jovem apaixonada por tecnologia.</p>
+            <img src="logo/TS.png" alt="">
+            <h3 class="acompanhar">Acompanhe-me:</h3>
+            <div>
+            <a href="https://www.linkedin.com/in/samara-parcero-75940b268/"><img src="logo/linkedin.png" alt="" ></a>
+            <a href="https://github.com/SamaraParcero"><img src="logo/github.png" alt=""></a>
+            <a href="https://www.instagram.com/techsamsdev/"><img src="logo/instagram.png" alt=""></a>
+            </div>
+
+        </div>
+        <div class="formulario">
+        <h2 class="titulo-fale"><span class="detalhe">&lt;</span>Fale Comigo!<span class="detalhe">></span></h2>
+        <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+            <div class="form-input">
+                <h5 class="titulo-formulario">Nome</h5>
+                <input type="text" name="w3lName" id="w3lName" class="caixamandar" placeholder="Digite seu nome">
+            </div>
+            <div class="form-input">
+                <h5 class="titulo-formulario">Email</h5>
+                <input type="email" name="w3lSender" id="w3lSender" class="caixamandar" placeholder="Digite seu email"
+                    required="" >
+            </div>
+            <div class="form-input">
+                <h5 class="titulo-formulario">Mensagem</h5>
+                <textarea name="w3lMessage" id="w3lMessage" placeholder="Digite sua mensagem"
+                    required="" class="caixamandar1"></textarea>
+            </div>
+            <div class="text-right">
+                <button  type="submit" class="btn ">Enviar</button>
+            </div>
+        </form>
+    </div>
+      </div>
+            
+                        <!-- Balãozinho de confirmação -->
+          <div id="balao-confirmacao" class="alert alert-success" style="display: none;">
+            Formulário enviado com sucesso!
+          </div>
+  
+      </div>
+  </div>
+
+
+
+
+
+    
 
     <section class="apresentacao">
         <div class="apresentacao-bloco">
@@ -74,12 +131,13 @@
             <div class="imagemtec"><img src="imgs/javascript.png" alt=""></div>
             <div class="imagemtec"><img src="imgs/uiux.png" alt=""></div>
             <div class="imagemtec"><img src="imgs/bootstrap.png" alt=""></div>
+            <div class="imagemtec"><img src="imgs/python.png" alt=""></div>
         </div>
     </section>
 
    
 
-    <section class="experiencia-profissional">
+    <section id="experiencias-profissionais" class="experiencia-profissional">
         <div class="linha"></div>
         <h1 class="nome"><span class="nomes-secao">&lt;</span>Experiências Profissionais<span class="nomes-secao">></span></h1>
         <div class="experiencias">
@@ -103,7 +161,7 @@
 
     </section>
 
-    <section class="formacao">
+    <section id="formacoes" class="formacao">
         <div class="linha"></div>
         <h1 class="nome"><span class="nomes-secao">&lt;</span>Formações<span class="nomes-secao">></span></h1>
         <div class="formacoes">
@@ -190,20 +248,19 @@
                     class="contateme"> Contate-me</span>! <span class="detalhe">></span></h1>
             <div class="contatos">
                 <ul>
-                    <li><img src="logo/Vector.png" alt=""> <span class="text"> samaraparceroti@gmail.com</span> </li>
-                    <li><img src="logo/whatsapp.svg" alt=""><span class="text">+55 71 996553565</span> </li>
-                    <li><img src="logo/instagram.svg" alt=""> <span class="text">@Techsamdev</span> </li>
+                    <li class="redes"><img src="logo/Vector.png" alt=""> <span class="text"> samaraparceroti@gmail.com</span> </li>
+                    <li class="redes"><img src="logo/instagram.svg" class="insta" alt=""> <span class="text">@Techsamdev</span> </li>
                 </ul>
 
             </div>
         </div>
 
         <div class="ultimo">
-            <h6 class="direito">Samara, todos os direitos reservados</h6>
+            <h6 class="direito">© TechSam, todos os direitos reservados</h6>
             <div>
-            <img src="logo/linkedin.png" alt="">
-            <img src="logo/github.png" alt="">
-            <img src="logo/instagram.png" alt="">
+            <a href="https://www.linkedin.com/in/samara-parcero-75940b268/"><img src="logo/linkedin.png" alt="" ></a>
+            <a href="https://github.com/SamaraParcero"><img src="logo/github.png" alt=""></a>
+            <a href="https://www.instagram.com/techsamsdev/"><img src="logo/instagram.png" alt=""></a>
            </div>
            <div></div>
         </div>
