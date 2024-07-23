@@ -7,6 +7,7 @@ function clickMenu(){
 }
 
 
+
 $('.containert').slick({
    dots: true,
    infinite: true,
@@ -87,3 +88,8 @@ $('.containert').slick({
 
 
 });
+
+
+
+
+

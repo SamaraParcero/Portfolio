@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="logo/favicon.png">
+    <link rel="icon" type="image/png" href="../static/logo/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="" href="lib/slick-1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="lib/slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" type="" href="../lib/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../lib/slick-1.8.1/slick/slick-theme.css"/>
 
     <title>Portfolio Samara Parcero</title>
 </head>
@@ -28,7 +28,7 @@
 <body>
 
     <header class="header">
-        <img class="logosam" src="logo/TechSam.svg" alt="">
+        <img class="logosam" src="../static/logo/TechSam.svg" alt="">
 
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
             menu
@@ -56,49 +56,46 @@
   
       <div class="caixamensagem ">
         <div class="logosamara">
-            <img src="logo/Techsam1.svg" alt="">
+            <img src="../static/logo/Techsam1.svg" alt="">
             <p class="slogan">Uma jovem apaixonada por tecnologia.</p>
-            <img src="logo/TS.png" alt="">
+            <img src="../static/logo/TS.png" alt="">
             <h3 class="acompanhar">Acompanhe-me:</h3>
             <div>
-            <a href="https://www.linkedin.com/in/samara-parcero-75940b268/"><img src="logo/linkedin.png" alt="" ></a>
-            <a href="https://github.com/SamaraParcero"><img src="logo/github.png" alt=""></a>
-            <a href="https://www.instagram.com/techsamsdev/"><img src="logo/instagram.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/samara-parcero-75940b268/"><img src="../static/logo/linkedin.png" alt="" ></a>
+            <a href="https://github.com/SamaraParcero"><img src="../static/logo/github.png" alt=""></a>
+            <a href="https://www.instagram.com/techsamsdev/"><img src="../static/logo/instagram.png" alt=""></a>
             </div>
 
         </div>
         <div class="formulario">
-        <h2 class="titulo-fale"><span class="detalhe">&lt;</span>Fale Comigo!<span class="detalhe">></span></h2>
-        <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
-            <div class="form-input">
-                <h5 class="titulo-formulario">Nome</h5>
-                <input type="text" name="w3lName" id="w3lName" class="caixamandar" placeholder="Digite seu nome">
-            </div>
-            <div class="form-input">
-                <h5 class="titulo-formulario">Email</h5>
-                <input type="email" name="w3lSender" id="w3lSender" class="caixamandar" placeholder="Digite seu email"
-                    required="" >
-            </div>
-            <div class="form-input">
-                <h5 class="titulo-formulario">Mensagem</h5>
-                <textarea name="w3lMessage" id="w3lMessage" placeholder="Digite sua mensagem"
-                    required="" class="caixamandar1"></textarea>
-            </div>
-            <div class="text-right">
-                <button  type="submit" class="btn ">Enviar</button>
-            </div>
-        </form>
-    </div>
-      </div>
-            
-                        <!-- Balãozinho de confirmação -->
-          <div id="balao-confirmacao" class="alert alert-success" style="display: none;">
+            <h2 class="titulo-fale"><span class="detalhe">&lt;</span>Fale Comigo!<span class="detalhe">></span></h2>
+            <form id="contato-form" action="https://formsubmit.co/samaraparceroti@gmail.com" method="POST" class="signin-form">
+                <div class="form-input">
+                    <h5 class="titulo-formulario">Nome</h5>
+                    <input type="text" name="nome" id="w3lName" class="caixamandar" placeholder="Digite seu nome">
+                </div>
+                <div class="form-input">
+                    <h5 class="titulo-formulario">Email</h5>
+                    <input type="email" name="email" id="email" class="caixamandar" placeholder="Digite seu email" required>
+                </div>
+                <div class="form-input">
+                    <h5 class="titulo-formulario">Mensagem</h5>
+                    <input type="text" name="mensagem" id="mensagem" placeholder="Digite sua mensagem" required class="caixamandar1">
+                </div>
+                <input type="hidden" name="_next" value="http://https://portfoliosamaraparcero.netlify.app/pags/thanks.html">
+                <div class="text-right">
+                    <button  type="submit" class="btn">Enviar</button>
+                </div>
+            </form>
+        </div>
+    
+        <!-- Balãozinho de confirmação -->
+        <div id="balao-confirmacao" class="alert alert-success hidden" >
             Formulário enviado com sucesso!
-          </div>
-  
+        </div>
       </div>
   </div>
-
+</div>
 
 
 
@@ -107,14 +104,14 @@
 
     <section class="apresentacao">
         <div class="apresentacao-bloco">
-            <img class="imgsam" src="imgs/WhatsApp Image 2023-12-29 at 19.04 1.png" alt="">
+            <img class="imgsam" src="../static/imgs/WhatsApp Image 2023-12-29 at 19.04 1.png" alt="">
             <div>
                 <h3 class="prazer-samara"><span class="prazer">Prazer,</span><span class="samara"> Samara
                         Parcero</span><span class="prazer">!</span></h3>
                 <h1 class="titulo"><span class="detalhe">&lt;</span>Desenvolvedora Java <br> Fullstack<span
                         class="detalhe">></span></h1>
                 <div class="localizacao">
-                    <img src="logo/Vector.svg" alt="">
+                    <img src="../static/logo/Vector.svg" alt="">
                     <h5 class="salvador">Salvador - BA</h5>
                 </div>
             </div>
@@ -125,13 +122,13 @@
         <div class="linha"></div>
         <h1 class="nome"><span class="nomes-secao">&lt;</span>Tecnologias<span class="nomes-secao">></span></h1>
         <div class="containert">
-            <div class="imagemtec"><img src="imgs/java.png" alt=""></div>
-            <div class="imagemtec"><img src="imgs/html.png" alt=""></div>
-            <div class="imagemtec"><img src="imgs/css.png" alt=""></div>
-            <div class="imagemtec"><img src="imgs/javascript.png" alt=""></div>
-            <div class="imagemtec"><img src="imgs/uiux.png" alt=""></div>
-            <div class="imagemtec"><img src="imgs/bootstrap.png" alt=""></div>
-            <div class="imagemtec"><img src="imgs/python.png" alt=""></div>
+            <div class="imagemtec"><img src="../static/imgs/java.png" alt=""></div>
+            <div class="imagemtec"><img src="../static/imgs/html.png" alt=""></div>
+            <div class="imagemtec"><img src="../static/imgs/css.png" alt=""></div>
+            <div class="imagemtec"><img src="../static/imgs/javascript.png" alt=""></div>
+            <div class="imagemtec"><img src="../static/imgs/uiux.png" alt=""></div>
+            <div class="imagemtec"><img src="../static/imgs/bootstrap.png" alt=""></div>
+            <div class="imagemtec"><img src="../static/imgs/python.png" alt=""></div>
         </div>
     </section>
 
@@ -142,7 +139,7 @@
         <h1 class="nome"><span class="nomes-secao">&lt;</span>Experiências Profissionais<span class="nomes-secao">></span></h1>
         <div class="experiencias">
             
-                <img class="img-imnd" src="imgs/imnd.jpg" alt="">
+                <img class="img-imnd" src="../static/imgs/imnd.jpg" alt="">
                 <div class="experiencia">
                 <h3 class="titulo-trabalho">Freelance <span class="detalhe-exp">- 2023</span></h3>
                 <h4 class="atuacao">Desenvolvedora Front-End</h4>
@@ -248,8 +245,8 @@
                     class="contateme"> Contate-me</span>! <span class="detalhe">></span></h1>
             <div class="contatos">
                 <ul>
-                    <li class="redes"><img src="logo/Vector.png" alt=""> <span class="text"> samaraparceroti@gmail.com</span> </li>
-                    <li class="redes"><img src="logo/instagram.svg" class="insta" alt=""> <span class="text">@Techsamdev</span> </li>
+                    <li class="redes"><img src="../static/logo/Vector.png" alt=""> <span class="text"> samaraparceroti@gmail.com</span> </li>
+                    <li class="redes"><img src="../static/logo/instagram.svg" class="insta" alt=""> <span class="text">@Techsamdev</span> </li>
                 </ul>
 
             </div>
@@ -258,9 +255,9 @@
         <div class="ultimo">
             <h6 class="direito">© TechSam, todos os direitos reservados</h6>
             <div>
-            <a href="https://www.linkedin.com/in/samara-parcero-75940b268/"><img src="logo/linkedin.png" alt="" ></a>
-            <a href="https://github.com/SamaraParcero"><img src="logo/github.png" alt=""></a>
-            <a href="https://www.instagram.com/techsamsdev/"><img src="logo/instagram.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/samara-parcero-75940b268/"><img src="../static/logo/linkedin.png" alt="" ></a>
+            <a href="https://github.com/SamaraParcero"><img src="../static/logo/github.png" alt=""></a>
+            <a href="https://www.instagram.com/techsamsdev/"><img src="../static/logo/instagram.png" alt=""></a>
            </div>
            <div></div>
         </div>
@@ -270,10 +267,10 @@
     
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="lib/slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="../lib/slick-1.8.1/slick/slick.min.js"></script>
     
 
-    <script src="script.js"></script>
+    <script src="../static/script.js"></script>
 
 </body>
 
